@@ -1,0 +1,270 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	color: black;
+	font-size: 16px;
+	background-color: #EDE3E9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 58px;
+}
+
+h3 {
+	font-size: 25px;
+	margin-bottom: 28px;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding-top: 113px	
+}
+
+p {
+	margin: 0;
+}
+
+.col-sm-3 {
+    padding: 0;
+    display: flex;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto; 
+}
+
+.header {
+	/* background: url('../img/header-bg.jpg') no-repeat center top / cover; */
+	background-color: #9F84BD;
+	padding-top: 10px;
+	color: #fff;
+	padding-bottom: 125px
+}
+
+header a {
+	color: #fff;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu a {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.menu a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.offer {
+	text-transform: uppercase;
+	margin-top: 216px;
+}
+
+.offer p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+    margin-left: 10px;
+}
+
+.offer h1 {
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em;
+    margin-left: 10px;
+}
+
+.btn {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 17px 47px;
+	border: 1px solid #fff;
+	width: 238px;
+	transition: all 0.5s ease;
+    margin-left: 10px;
+}
+
+.btn:hover {
+	background: #fff;
+    color: #000;
+}
+
+.description {
+	justify-content: space-between;
+    display: flex;
+    margin-top: 50px;
+}
+
+.description p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.62em;
+}
+
+.desc-left, .desc-right {
+	width: 450px;
+}
+
+.footer-text {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	padding: 69px 0;
+    color: gray;
+}
+
+.footer-text p {
+	margin-right: 67px;
+}
+
+.mail {
+    padding-bottom: 125px;
+}
+
+.about {
+	padding-bottom: 125px;
+}
+
+.information {
+    padding-bottom: 125px;
+}
+
+.text {
+	justify-content: space-between;
+    margin-top: 50px;
+	width: 800px;
+}
+
+.text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.62em;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+
+@media screen and (max-width: 992px)  {
+	body {
+		font-size: 30px;
+	}
+	
+	.menu a {
+		text-transform: uppercase;
+		font-size: 30px;
+		letter-spacing: 0.1em;
+	}
+
+	.menu {
+		display: block!important;
+		padding-left: 500px;
+	}
+
+	.header {
+		/* background: url('../img/header-bg.jpg') no-repeat center top / cover; */
+		background-color: #9F84BD;
+	}
+
+	#header {
+		height: 2190px;
+	}
+
+	.offer h1 {
+		font-size: 150px;
+		margin-bottom: 19px;
+		margin-top: -9px;
+		letter-spacing: 0.02em;
+		margin-left: 10px;
+	}
+
+	.offer p {
+		font-size: 50px;
+		letter-spacing: 0.1em;
+		margin-left: 20px;
+	}
+
+	.offer {
+		text-transform: uppercase;
+		margin-top: 600px;
+	}
+
+	.btn {
+		display: block;
+		font-size: 36px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		border: 1px solid #fff;
+		width: 238px;
+		transition: all 0.5s ease;
+		margin-left: 30px;
+	}
+
+	#information {
+		height: 2190px;
+	}
+
+	#mail {
+		height: 2190px;
+	}
+
+	h2 {
+		font-size: 100px;
+		margin-bottom: 58px;
+	}
+
+	h3 {
+		font-size: 50px;
+	}
+
+	.description p {
+		font-size: 30px;
+	}
+
+	.form-control {
+		width: 300px;
+		height: 50px;
+	}
+
+	.col-md-3
+	{
+		width: 30%;
+		margin-left: -25px;
+	}
+
+	.desc-left, .desc-right {
+		width: 300px;
+	}
+}

@@ -90,6 +90,7 @@ header a {
 .nav {
     display: flex;
     align-items: center;
+    padding-left: 100px;
 }
 
 .offer {
@@ -239,7 +240,7 @@ header a {
 
 @media screen and (max-width: 992px) {
     body {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .menu a {
@@ -249,8 +250,7 @@ header a {
     }
 
     .menu {
-        display: block !important;
-        padding-left: 500px;
+        padding-left: -100px;
     }
 
     .header {
@@ -263,7 +263,7 @@ header a {
     }
 
     .offer h1 {
-        font-size: 150px;
+        font-size: 200px;
         margin-bottom: 19px;
         margin-top: -9px;
         letter-spacing: 0.02em;
@@ -287,9 +287,9 @@ header a {
         text-align: center;
         letter-spacing: 0.1em;
         border: 1px solid #fff;
-        width: 238px;
+        width: 400px;
         transition: all 0.5s ease;
-        margin-left: 30px;
+        margin-left: -50px;
     }
 
     #information {
@@ -297,7 +297,11 @@ header a {
     }
 
     #mail {
-        height: 2190px;
+        height: 780px;
+    }
+
+    #mail1 {
+        height: 2200px;
     }
 
     h2 {
@@ -319,11 +323,15 @@ header a {
     }
 
     .col-md-3 {
-        width: 30%;
-        margin-left: -25px;
+        width: 20%;
+        margin-left: 40px;
     }
 
     .desc-left, .desc-right {
         width: 300px;
+    }
+
+    .col-sm-4 {
+        width: 30%;
     }
 }

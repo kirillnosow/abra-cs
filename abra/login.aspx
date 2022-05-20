@@ -26,32 +26,26 @@
     <header id="header" class="header">
         <div class="header">
             <div class="nav">
-                <div class="col-sm-4">
-                </div>
-                <div class="col-sm-4 menu">
-                    <div class="col-sm-12 col-md-3">
-                        <a href="index.aspx">
-                        Главная
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-                        <a href="about.aspx">
-                        О нас
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-                        <a href="shop.aspx">
-                        Купить
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-                        <a href="contact.aspx">
-                        Контакты
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                </div>
+                <div class="col-sm-12 col-md-3 menu">
+                    <a href="index.aspx">
+                    Главная
+                    </a>
+                 </div>
+                            <div class="col-sm-12 col-md-3 menu">
+                                <a href="about.aspx">
+                                О нас
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3 menu">
+                                <a href="shop.aspx">
+                                Купить
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3 menu">
+                                <a href="contact.aspx">
+                                Контакты
+                                </a>
+                             </div>
             </div>
         </div>
             <h1 style="text-align: center;">

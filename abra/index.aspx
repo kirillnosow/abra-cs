@@ -35,36 +35,30 @@
         <div class="section">
             <!-- header -->
             <header id="header" class="header">
-                <div class="header">
-                    <div class="nav">
-                        <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-4 menu">
-                            <div class="col-sm-12 col-md-3">
+        <div class="header">
+            <div class="nav">
+                            <div class="col-sm-12 col-md-3 menu">
                                 <a href="index.aspx">
                                 Главная
                                 </a>
                             </div>
-                            <div class="col-sm-12 col-md-3">
+                            <div class="col-sm-12 col-md-3 menu">
                                 <a href="about.aspx">
                                 О нас
                                 </a>
                             </div>
-                            <div class="col-sm-12 col-md-3">
+                            <div class="col-sm-12 col-md-3 menu">
                                 <a href="shop.aspx">
                                 Купить
                                 </a>
                             </div>
-                            <div class="col-sm-12 col-md-3">
+                            <div class="col-sm-12 col-md-3 menu">
                                 <a href="contact.aspx">
                                 Контакты
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
 
                 <div class="offer">
                     <p>платформа с онлайн-курсами</p>
@@ -81,7 +75,7 @@
             <!-- information -->
             <section id="information" class="information" style="background-color: #EDE3E9">
                 <div class="container information">
-                    <h2>учиться с нами  
+                    <h2>учиться с нами <br />
                         <span
                         class="txt-rotate"
                         data-period="2000"
@@ -125,52 +119,48 @@
         <!-- the third for fixed scroll -->
         <div class="section">
             <!-- mail -->
-            <section id="mail" class="mail" style="background-color: #EBC3DB;">
+            <section id="mail1" class="mail" style="background-color: #EBC3DB;">
                 <div class="container">
-                    <h2>связаться?</h2>
-                    <form id="form" action="#">
-                        <div class="container" style = "text-align: center; padding-top: 100px; padding-bottom: 100px;">
-                            <div class="row">
-                                <!--Begining of the Main Form-->
-                                    <div class="col-md-10 orderInfo">
-                                        <div class="row" style="padding-top: 5px;">
-                                            <div class="col-md-3"></div>
-                                            <div class="col-md-3">Имя</div>
-                                            <div class="col-md-3"><input class="form-control" id="first" type="text" onblur="checkFirst();" required="" minlength="2"></div>
-                                            <div class="col-md-3"><span id="first_Check"></span></div>
-                                        </div>
-
-                                        <div class="row" style="padding-top: 5px;">
-                                            <div class="col-md-3"></div>
-                                            <div class="col-md-3">Фамилия</div>
-                                            <div class="col-md-3"><input class="form-control" id="last" type="text" onblur="checkLast();" required="" minlength="2"></div>
-                                            <div class="col-md-3"><span id="last_Check"></span></div>
-                                        </div>
-
-                                        <div class="row" style="padding-top: 5px;">
-                                            <div class="col-md-3"></div>
-                                            <div class="col-md-3">Телефон</div>
-                                            <div class="col-md-3"><input class="form-control" id="online_phone" name="phone" type="tel" maxlength="50" required="" minlength="10">
-                                        </div>
-
-                                        <div class="col-md-3"><span id="phone_Check"></span></div>
-                                    </div>
-
-                                    <div class="row" style="padding-top: 5px;">
-                                        <div class="col-md-3"></div>
-                                        <div class="col-md-3"></div>
-                                        <div class="col-md-3">
-                                            <button type="submit" class="btn" id="btn2"><span>Оставить заявку!</span></button>
-                                        </div>
-                                        <div class="col-md-3"></div>
-                                    </div>
+            <h2>Связаться?</h2>
+            <form id="form" action="/test.php" method="post">
+                <div class="container" style = "text-align: center; padding-top: 100px; padding-bottom: 100px;">
+                    <div class="row">
+                        <!--Begining of the Main Form-->
+                        <div class="col-md-10 orderInfo">
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">Имя</div>
+                                    <div class="col-md-3"><input class="form-control" name="name" id="TextBox1" type="text" onblur="checkFirst();" required=""></div>
+                                    <div class="col-md-3"><span id="first_Check"></span></div>
                                 </div>
-                        <!--End of the form-->
-
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">Email</div>
+                                    <div class="col-md-3"><input class="form-control" name="email" id="TextBox2" type="text" onblur="checkFirst();" required=""></div>
+                                    <div class="col-md-3"><span id="last_Check"></span></div>
+                                </div>
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">Сообщение</div>
+                                    <div class="col-md-3"><textarea id="TextArea1" class="form-control" name="message" cols="20" rows="4" required="required"></textarea>
+                                    </div>
+                                    <div class="col-md-3"><span id="phone_Check"></span></div>
+                                </div>
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">
+                                    <button type="submit" class="btn"><span>Отправить!</span></button>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
                             </div>
-                        </div>            
-                    </form>
-                </div>
+                        <!--End of the form-->
+                    </div>
+                </div>            
+            </form>
+        
+        </div>
             </section>
         </div>
 

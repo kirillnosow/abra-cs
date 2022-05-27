@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="abra.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Abrakadabra</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <section id="mail" class="mail">
+            <div class="container">
+            <h2>Связаться?</h2>
+                <div class="container" style = "text-align: center; padding-top: 100px; padding-bottom: 100px;">
+                    <div class="row">
+                        <!--Begining of the Main Form-->
+                        <div class="col-md-10 orderInfo">
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">Имя</div>
+                                    <div class ="col-sm-3">
+                                        <asp:TextBox ID="TextBox1" runat="server" class="form-control" name="name" type="text" onblur="checkFirst();" required=""></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-3"><span id="first_Check"></span></div>
+                                </div>
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">Email</div>
+                                    <div class="col-sm-3">
+                                        <asp:TextBox ID="TextBox2" runat="server" class="form-control" name="email" type="text" onblur="checkFirst();" required=""></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-3"><span id="last_Check"></span></div>
+                                </div>
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">Сообщение</div>
+                                    <div class="col-sm-3">
+                                        <asp:TextBox ID="TextBox3" runat="server" class="form-control" name="message"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 5px;">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-3">
+                                        <asp:Button ID="Button1" runat="server" Text="Отправить!" class="btn" OnClick="Button1_Click"/>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+                            </div>
+                        <!--End of the form-->
+                    </div>
+                </div>            
+        </div>
+        </section>
+
+    <footer id="footer" class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>
+					©2022 abrakadabra project
+				</p>
+				<p>
+					kirill nosov & olga samoylova
+				</p>
+			</div>
+		</div>
+	</footer>
+    </form>
+</body>
+</html>

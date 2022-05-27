@@ -121,8 +121,8 @@
             <!-- mail -->
             <section id="mail1" class="mail" style="background-color: #EBC3DB;">
                 <div class="container">
-            <h2>Связаться?</h2>
-            <form id="form" action="/test.php" method="post">
+            <form id="form" runat="server">
+                 <h2>Связаться?</h2>
                 <div class="container" style = "text-align: center; padding-top: 100px; padding-bottom: 100px;">
                     <div class="row">
                         <!--Begining of the Main Form-->
@@ -130,34 +130,38 @@
                                 <div class="row" style="padding-top: 5px;">
                                     <div class="col-md-3"></div>
                                     <div class="col-md-3">Имя</div>
-                                    <div class="col-md-3"><input class="form-control" name="name" id="TextBox1" type="text" onblur="checkFirst();" required=""></div>
+                                    <div class ="col-sm-3">
+                                        <asp:TextBox ID="TextBox1" runat="server" class="form-control" name="name" type="text" onblur="checkFirst();" required=""></asp:TextBox>
+                                    </div>
                                     <div class="col-md-3"><span id="first_Check"></span></div>
                                 </div>
                                 <div class="row" style="padding-top: 5px;">
                                     <div class="col-md-3"></div>
                                     <div class="col-md-3">Email</div>
-                                    <div class="col-md-3"><input class="form-control" name="email" id="TextBox2" type="text" onblur="checkFirst();" required=""></div>
+                                    <div class="col-sm-3">
+                                        <asp:TextBox ID="TextBox2" runat="server" class="form-control" name="email" type="text" onblur="checkFirst();" required=""></asp:TextBox>
+                                    </div>
                                     <div class="col-md-3"><span id="last_Check"></span></div>
                                 </div>
                                 <div class="row" style="padding-top: 5px;">
                                     <div class="col-md-3"></div>
                                     <div class="col-md-3">Сообщение</div>
-                                    <div class="col-md-3"><textarea id="TextArea1" class="form-control" name="message" cols="20" rows="4" required="required"></textarea>
+                                    <div class="col-sm-3">
+                                        <asp:TextBox ID="TextBox3" runat="server" class="form-control" name="message"></asp:TextBox>
                                     </div>
-                                    <div class="col-md-3"><span id="phone_Check"></span></div>
                                 </div>
                                 <div class="row" style="padding-top: 5px;">
                                     <div class="col-md-3"></div>
                                     <div class="col-md-3"></div>
                                     <div class="col-md-3">
-                                    <button type="submit" class="btn"><span>Отправить!</span></button>
+                                        <asp:Button ID="Button1" runat="server" Text="Отправить!" class="btn" OnClick="Button1_Click"/>
                                     </div>
                                     <div class="col-md-3"></div>
                                 </div>
                             </div>
                         <!--End of the form-->
                     </div>
-                </div>            
+                </div>                        
             </form>
         
         </div>

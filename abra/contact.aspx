@@ -1,12 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="abra.WebForm4" %>
-
-<!doctype html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Abrakadabra</title>
-    
-        <!-- bootstrap -->
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="abra.WebForm8" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+            <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- css -->
         <link rel="stylesheet" href="css/main.css">
@@ -20,11 +14,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
-    </head>
-<body>
+</asp:Content>
 
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <header id="header" class="header">
-        <div class="header">
+    <div class="header">
             <div class="nav">
                             <div class="col-sm-12 col-md-3 menu">
                                 <a href="index.aspx">
@@ -56,63 +51,6 @@
             </h1>
             <a href="login.aspx" class="btn">Войти</a>
         </div>
-    </header>
+        </header>
 
-    <section id="mail" class="mail">
-        <div class="container">
-            <h2>Связаться?</h2>
-            <form id="form" action="/test.php" method="post">
-                <div class="container" style = "text-align: center; padding-top: 100px; padding-bottom: 100px;">
-                    <div class="row">
-                        <!--Begining of the Main Form-->
-                        <div class="col-md-10 orderInfo">
-                                <div class="row" style="padding-top: 5px;">
-                                    <div class="col-md-3"></div>
-                                    <div class="col-md-3">Имя</div>
-                                    <div class="col-md-3"><input class="form-control" name="name" id="TextBox1" type="text" onblur="checkFirst();" required=""></div>
-                                    <div class="col-md-3"><span id="first_Check"></span></div>
-                                </div>
-                                <div class="row" style="padding-top: 5px;">
-                                    <div class="col-md-3"></div>
-                                    <div class="col-md-3">Email</div>
-                                    <div class="col-md-3"><input class="form-control" name="email" id="TextBox2" type="text" onblur="checkFirst();" required=""></div>
-                                    <div class="col-md-3"><span id="last_Check"></span></div>
-                                </div>
-                                <div class="row" style="padding-top: 5px;">
-                                    <div class="col-md-3"></div>
-                                    <div class="col-md-3">Сообщение</div>
-                                    <div class="col-md-3"><textarea id="TextArea1" class="form-control" name="message" cols="20" rows="4" required="required"></textarea>
-                                    </div>
-                                    <div class="col-md-3"><span id="phone_Check"></span></div>
-                                </div>
-                                <div class="row" style="padding-top: 5px;">
-                                    <div class="col-md-3"></div>
-                                    <div class="col-md-3"></div>
-                                    <div class="col-md-3">
-                                    <button type="submit" class="btn"><span>Отправить!</span></button>
-                                    </div>
-                                    <div class="col-md-3"></div>
-                                </div>
-                            </div>
-                        <!--End of the form-->
-                    </div>
-                </div>            
-            </form>
-        
-        </div>
-    </section>
-
-    <footer id="footer" class="footer">
-		<div class="container">
-			<div class="footer-text">
-				<p>
-					©2022 abrakadabra project
-				</p>
-				<p>
-					kirill nosov & olga samoylova
-				</p>
-			</div>
-		</div>
-	</footer>
-</body>
-</html>
+</asp:Content>
